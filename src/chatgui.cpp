@@ -2,9 +2,12 @@
 #include <wx/colour.h>
 #include <wx/image.h>
 #include <string>
+#include <memory>
+
 #include "chatbot.h"
 #include "chatlogic.h"
 #include "chatgui.h"
+
 
 // size of chatbot window
 const int width = 414;
@@ -116,9 +119,11 @@ ChatBotPanelDialog::ChatBotPanelDialog(wxWindow *parent, wxWindowID id)
 
     //// STUDENT CODE
     ////
-
+	
     // create chat logic instance
-    _chatLogic = new ChatLogic(); 
+//OF>    _chatLogic = new ChatLogic(); 
+    _chatLogic = std::make_unique<ChatLogic>();
+    
 
     // pass pointer to chatbot dialog so answers can be displayed in GUI
     _chatLogic->SetPanelDialogHandle(this);
@@ -135,13 +140,13 @@ ChatBotPanelDialog::~ChatBotPanelDialog()
     //// STUDENT CODE
     ////
 
-    delete _chatLogic;
+//OF>    delete _chatLogic;
 
     ////
-    //// EOF STUDENT CODE
+    //// EOF STUDENT  CODE
 }
 
-void ChatBotPanelDialog::AddDialogItem(wxString text, bool isFromUser)
+void  ChatBotPanelDialog::AddDialogItem(wxString text, bool isFromUser)
 {
     // add a single dialog element to the sizer
     ChatBotPanelDialogItem *item = new ChatBotPanelDialogItem(this, text, isFromUser);
