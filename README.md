@@ -63,3 +63,13 @@ ChatBot Move Assignment Operator
 ChatBot Destructor
 ChatBot Destructor 
 ```
+# Credits
+
+## Used resources
+
+[The starter code for Memory Management Chatbot Project](https://github.com/udacity/CppND-Memory-Management-Chatbot.git). 
+
+
+# Contributors
+* [Lampros Vatsilidis](https://www.linkedin.com/in/lampros-vatsilidis-5666ba128/)
+* [Udacity C++ Nanodegree Program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213) 
