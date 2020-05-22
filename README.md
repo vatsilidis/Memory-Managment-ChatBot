@@ -71,5 +71,5 @@ ChatBot Destructor
 
 
 # Contributors
-* [Lampros Vatsilidis](https://www.linkedin.com/in/lampros-vatsilidis-5666ba128/)
+* [Lampros Vatsilidis](https://www.linkedin.com/in/lamprosvatsilidis/)
 * [Udacity C++ Nanodegree Program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213) 
